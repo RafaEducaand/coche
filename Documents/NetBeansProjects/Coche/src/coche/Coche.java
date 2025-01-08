@@ -57,7 +57,7 @@ public class Coche {
             throw new Exception ("No se puede vender una cantidad negativa de coches");
         if (obtenerStock()< cantidad)
             throw new Exception ("No  hay suficientes coches para vender");
-        stock = stock - cantidad;
+        stock = stock - cantidad -1;
     }
     
 }  
